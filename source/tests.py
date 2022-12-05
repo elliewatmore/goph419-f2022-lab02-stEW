@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import UnivariateSpline
-from testing import spline_function
-from testing import gauss_iter_solve
+from linalg_interp import spline_function
+from linalg_interp import gauss_iter_solve
 
 #testing gauss iteration function
 
