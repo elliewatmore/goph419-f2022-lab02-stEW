@@ -115,6 +115,9 @@ def gauss_iter_solve(A,b,x0=None, tol = 1e-8, alg = 'seidel'):
 		dx = x0 - x_old
 		# calculate new error
 		eps_a = np.linalg.norm(dx, axis = 0) / np.linalg.norm(x0, axis = 0)
+		# testing for convergence in specified number of iterations, if system does not converge raise a runtime warning
+		if n_iter > max_it:
+			raise RuntimeWarning('system does not converge')
 	
 	#x0=np.reshape(x0,(n,n))
 	return x0
