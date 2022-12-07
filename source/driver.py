@@ -77,6 +77,7 @@ ax[1][2].set_xlabel('Temperature (°C)')
 ax[1][2].set_ylabel('Air density (kg/m^3)')
 ax[1][2].set_title('Air density vs temp (cubic spline function)')
 
-plt.savefig("Air/water density vs temp")
+plt.savefig('Air/water density vs temp')
+plt.show()
 
 
